@@ -42,7 +42,11 @@ function getCheckedValue() {
 //RADIOS BUTTON GETTING VALUE ON CLICK
 inputs.addEventListener('click', e => {
     e.preventDefault();
-    console.log(getCheckedValue());
+    // console.log(getCheckedValue());
+    var pourcentage = document.getElementById("percentage").innerText=getCheckedValue()+"%";
+    scroll(0,0);
+    // console.log(pourcentage);
+    // pourcentage.value = getCheckedValue();
 });
 
 //the window object //scroll on top automatique
@@ -61,5 +65,5 @@ const timer = setInterval(() => {
     else {
         output++;
     }
-}, 20);
+}, 50);
 
